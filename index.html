@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Tools Nexora</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+        <span class="logo-text">Menu Informasi</span>
+      </div>
+      <div class="header-right">
+        <span class="display-mode">DISPLAY MODE <strong>Standard</strong></span>
+        <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="live-badge"><span class="dot"></span> LIVE REACTOR</div>
+        <div class="hero-logo">
+          <div class="n-logo">N</div>
+          <div>
+            <h1>All Tools Nexora</h1>
+            <p class="dev">Developer Oika</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Session Info -->
+    <section class="session-matrix">
+      <div class="info-card">
+        <i class="fas fa-fingerprint"></i>
+        <div>
+          <span class="label">SESSION MATRIX</span>
+          <span class="value">System Identity</span>
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-globe"></i>
+        <div>
+          <span class="label">NEGARA</span>
+          <span class="value"><img src="https://flagcdn.com/w20/id.png" alt="ID"> Indonesia</span>
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-mobile-alt"></i>
+        <div>
+          <span class="label">DEVICE</span>
+          <span class="value">Android</span>
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-chrome"></i>
+        <div>
+          <span class="label">BROWSER</span>
+          <span class="value">Chrome</span>
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-signal"></i>
+        <div>
+          <span class="label">STATUS</span>
+          <span class="value online"><span class="status-dot"></span> Online</span>
+        </div>
+      </div>
+      <div class="info-card">
+        <i class="fas fa-battery-three-quarters"></i>
+        <div>
+          <span class="label">BATTERY</span>
+          <span class="value">36%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <nav class="tabs">
+      <button class="tab active" data-cat="all"><i class="fas fa-th"></i> All</button>
+      <button class="tab" data-cat="downloader"><i class="fas fa-download"></i> Downloader</button>
+      <button class="tab" data-cat="maker"><i class="fas fa-magic"></i> Maker</button>
+      <button class="tab" data-cat="tools"><i class="fas fa-tools"></i> Tools</button>
+    </nav>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+      <div class="section-header">
+        <h2><i class="fas fa-th"></i> Semua Tools</h2>
+        <span class="catalog">reactor catalog <strong id="tool-count">12</strong></span>
+      </div>
+
+      <div class="tools-grid" id="tools-grid">
+        <!-- Tools will be injected by JS -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Tool Modal / Pages handled via JS routing -->
+  <div id="tool-page" class="tool-page hidden"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
